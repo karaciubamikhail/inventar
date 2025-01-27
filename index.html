@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="inventory-container">
+    <!-- Левая часть (фон и детали) -->
+    <div class="inventory-left">
+      <div class="background"></div>
+      <div class="details">
+        <p>Описание предметов появится здесь.</p>
+      </div>
+    </div>
+
+    <!-- Правая часть (сетка инвентаря) -->
+    <div class="inventory-right">
+      <div class="inventory-grid">
+        <!-- Пример элементов -->
+        <div class="item" data-id="1" draggable="true" style="background-color: lightgreen;"></div>
+        <div class="item" data-id="2" draggable="true" style="background-color: lightblue;"></div>
+        <div class="item" data-id="3" draggable="true" style="background-color: lightcoral;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+  <div class="modal hidden">
+    <div class="modal-content">
+      <p id="item-description">Описание предмета</p>
+      <button class="btn-delete">Удалить</button>
+      <button class="btn-close">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
